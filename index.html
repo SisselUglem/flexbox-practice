@@ -6,13 +6,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Practice</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <section class="squares">
+    <section class="squares-container">
         <div class="squares-block squares-block-first">
-            <div class="squares-block__square"></div>
-            <div class="squares-block__square"></div>
-            <div class="squares-block__square"></div>
+            <div class="squares-block__square squares-block-first__square--first squares-block__square--first"></div>
+            <div class="squares-block__square squares-block-first__square--first"></div>
+            <div class="squares-block__square squares-block-first__square--first"></div>
         </div>
         <div class="squares-block squares-block-second">
             <div class="squares-block__rectangle"></div>
@@ -22,62 +23,68 @@
         <div class="squares-block squares-block-third">
             <div class="squares-block__square"></div>
             <div class="squares-block__square"></div>
-            <div class="squares-block__square"></div>
+            <div class="squares-block__square squares-block-third--last"></div>
         </div>
         <div class="squares-block squares-block-fourth">
-            <div class="squares-block__square"></div>
-            <div class="squares-block__square"></div>
-            <div class="squares-block__square"></div>
+            <div class="squares-block__square squares-block__square--row squares-block-fourth--first"></div>
+            <div class="squares-block__square squares-block__square--row"></div>
+            <div class="squares-block__square squares-block-fourth--last"></div>
         </div>
         <div class="squares-block squares-block-fifth">
-            <div class="squares-block-fifth__rectangle">Some Text</div>
-            <div class="squares-block-fifth__square">Some Text</div>
-            <div class="squares-block-fifth__rectangle">Some Text</div>
+            <div class="squares-block__rectangle squares-block-fifth__rectangle">Some text</div>
+            <div class="squares-block-fifth__square">Some text</div>
+            <div class="squares-block__rectangle squares-block-fifth__rectangle">Some text</div>
         </div>
-        <div class="squares-block squares-block-fifth">
+        <div class="squares-block squares-block-sixth">
             <div class="squares-block__square"></div>
-            <div class="squares-block-fifth__rectangle"></div>
+            <div class="squares-block-sixth__rectangle"></div>
             <div class="squares-block__square"></div>
         </div>
     </section>
-    <section class="circles">
-        <div class="circles-block circles-block-first">
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-        </div>
-        <div class="circles-block circles-block-second">
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-        </div>
-        <div class="circles-block circles-block-third">
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-        </div>
-        <div class="circles-block circles-block-fourth">
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-        </div>
-        <div class="circles-block circles-block-fifth">
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
-            <div class="circles-block__circle"></div>
+    <section class="circles-container">
+        <div class="circles-block-container">
+            <div class="circles-block circles-block-first">
+                <div class="circles-block__circle circles-block__circle--row-first"></div>
+                <div class="circles-block__circle circles-block__circle--row-first"></div>
+                <div class="circles-block__circle circles-block__circle--row-first"></div>
+                <div class="circles-block__circle circles-block__circle--row-first"></div>
+                <div class="circles-block__circle circles-block__circle--row-first"></div>
+            </div>
+            <div class="circles-block circles-block-second">
+                <div class="circles-block__circle circles-block__circle--row-second"></div>
+                <div class="circles-block__circle circles-block__circle--row-second"></div>
+                <div class="circles-block__circle circles-block__circle--row-second"></div>
+                <div class="circles-block__circle circles-block__circle--row-second"></div>
+                <div class="circles-block__circle circles-block__circle--row-second"></div>
+            </div>
+            <div class="circles-block circles-block-third">
+                <div class="circles-block-third--row-one">
+                    <div class="circles-block__circle circles-block__circle--row-third"></div>
+                    <div class="circles-block__circle circles-block__circle--row-third"></div>
+                    <div class="circles-block__circle circles-block__circle--row-third"></div>
+                </div>
+                <div class="circles-block-third--row-two">
+                    <div class="circles-block__circle circles-block__circle--row-third"></div>
+                    <div class="circles-block__circle circles-block__circle--row-third"></div>
+                    <div class="circles-block__circle circles-block__circle--row-third"></div>
+                </div>
+            </div>
+            <div class="circles-block circles-block-fourth">
+                <div class="circles-block__circle circles-block__circle--row-fourth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fourth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fourth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fourth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fourth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fourth"></div>
+            </div>
+            <div class="circles-block circles-block-fifth">
+                <div class="circles-block__circle circles-block__circle--row-fifth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fifth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fifth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fifth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fifth"></div>
+                <div class="circles-block__circle circles-block__circle--row-fifth"></div>
+            </div>
         </div>
     </section>  
 </body>
